@@ -207,6 +207,7 @@ Copy the code below and paste it into your file **automations.yaml**
     data_template:
       name: >
         {{ trigger.to_state.state }}
+      mode: dark # Option: light
 ```
 
 
