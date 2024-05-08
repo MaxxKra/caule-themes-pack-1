@@ -82,6 +82,18 @@
 #     - Caule Black Pink Glass
 #     - Caule Black Gray Glass 
 #
+#     - Caule Animated Rose Glass
+#     - Caule Animated Purple Glass
+#     - Caule Animated Blue Glass 
+#     - Caule Animated Aqua Glass
+#     - Caule Animated Green Glass
+#     - Caule Animated Yellow Glass
+#     - Caule Animated Orange Glass
+#     - Caule Animated Coral Glass
+#     - Caule Animated Pink Glass
+#     - Caule Animated Gray Glass 
+#
+#
 #
 
 
@@ -4629,6 +4641,1227 @@ Caule Dark Gray:
   label-badge-blue: var(--light-primary-color)
   # Cards colors 
   ha-card-background: "#2A282D"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+   
+#     
+#        ###    ##    ## #### ##     ##    ###    ######## ######## ########  
+#       ## ##   ###   ##  ##  ###   ###   ## ##      ##    ##       ##     ## 
+#      ##   ##  ####  ##  ##  #### ####  ##   ##     ##    ##       ##     ## 
+#     ##     ## ## ## ##  ##  ## ### ## ##     ##    ##    ######   ##     ## 
+#     ######### ##  ####  ##  ##     ## #########    ##    ##       ##     ## 
+#     ##     ## ##   ###  ##  ##     ## ##     ##    ##    ##       ##     ## 
+#     ##     ## ##    ## #### ##     ## ##     ##    ##    ######## ########  
+#     
+
+# The following 10 themes are used to correctly display the "lovelace-animated-background.
+# In this case, the "background" and the "lovelace-background" are disabled 
+# to display the "lovelace-animated-background" without changing the transparency and color of the cards.
+
+Caule Animated Rose Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#aa3151"
+  light-primary-color: "#b8536d"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+
+##########################################
+
+
+
+Caule Animated Purple Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#904eab"
+  light-primary-color: "#c983e4"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+
+##########################################
+
+
+
+Caule Animated Blue Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#009bb5"
+  light-primary-color: "#5ed1eb"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+  card-mod-theme: "Caule Black Blue Glass"
+  # Header
+  card-mod-root-yaml: |
+    paper-tabs$: |
+      .not-visible {
+        display: none;
+      }
+      /*Uncomment this if you want the header on the bottom
+      #selectionBar {
+        bottom: unset !important;
+      }
+
+
+
+
+##########################################
+
+
+
+Caule Animated Aqua Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#11ab93"
+  light-primary-color: "#62e3c8"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+
+##########################################
+
+
+
+Caule Animated Green Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#6ca049"
+  light-primary-color: "#a1d77b"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+
+##########################################
+
+
+
+Caule Animated Yellow Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#d6a245"
+  light-primary-color: "#ffd979"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+
+##########################################
+
+
+
+Caule Animated Orange Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#d25f36"
+  light-primary-color: "#ff9568"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+
+##########################################
+
+
+
+Caule Animated Coral Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#fa6e5e"
+  light-primary-color: "#ffa792"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+
+##########################################
+
+
+
+Caule Animated Pink Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#f36f92"
+  light-primary-color: "#ffa8c9"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
+  paper-card-background-color: var(--ha-card-background)
+  paper-listbox-background-color: var(--primary-background-color)
+  # Toggle button colors
+  paper-toggle-button-checked-button-color: var(--primary-color)
+  paper-toggle-button-checked-bar-color: var(--light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--primary-background-color)
+  # Switch colors
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table colors
+  table-row-background-color: var(--divider-color)
+  table-row-alternative-background-color: var(--secondary-background-color)
+  card-background-color: var(--primary-background-color)
+  #Animated icons
+  weather-icon-clear-night: url("/hacsfiles/themes/caule-themes-pack-1/clear-night.svg")
+  weather-icon-cloudy: url("/hacsfiles/themes/caule-themes-pack-1/cloudy.svg")
+  weather-icon-fog: url("/hacsfiles/themes/caule-themes-pack-1/fog.svg")
+  weather-icon-lightning: url("/hacsfiles/themes/caule-themes-pack-1/lightning.svg")
+  weather-icon-lightning-rainy: url("/hacsfiles/themes/caule-themes-pack-1/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/hacsfiles/themes/caule-themes-pack-1/partlycloudy.svg")
+  weather-icon-pouring: url("/hacsfiles/themes/caule-themes-pack-1/pouring.svg")
+  weather-icon-rainy: url("/hacsfiles/themes/caule-themes-pack-1/rainy.svg")
+  weather-icon-hail: url("/hacsfiles/themes/caule-themes-pack-1/hail.svg")
+  weather-icon-snowy: url("/hacsfiles/themes/caule-themes-pack-1/snowy.svg")
+  weather-icon-snowy-rainy: url("/hacsfiles/themes/caule-themes-pack-1/snowy-rainy.svg")
+  weather-icon-sunny: url("/hacsfiles/themes/caule-themes-pack-1/sunny.svg")
+  weather-icon-windy: url("/hacsfiles/themes/caule-themes-pack-1/windy.svg")
+  weather-icon-windy-variant: url("/hacsfiles/themes/caule-themes-pack-1/windy-variant.svg")
+  weather-icon-exceptional: url("/hacsfiles/themes/caule-themes-pack-1/exceptional.svg")
+  # Shadown
+  ha-card-box-shadow: 'inset 0px 0px 0px 0px var(--divider-color)'
+  # HACS
+  hacs-badge-color: var(--primary-color)
+  link-text-color: var(--disabled-color)
+  markdown-code-background-color: var(--divider-color)
+  google-blue-500: var(--primary-color)
+  accent-color: var(--light-primary-color)
+  hacs-chip-color: var(--primary-color)
+  # New
+  mdc-text-field-fill-color: var(--ha-card-background)
+  mdc-text-field-ink-color: var(--primary-text-color)
+  mdc-select-fill-color: var(--ha-card-background)
+  mdc-text-field-label-ink-color: var(--primary-color)
+  input-fill-color: var(--primary-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+  input-disabled-fill-color: var(--primary-background-color)
+  input-disabled-ink-color: var(--disabled-text-color)
+  input-disabled-label-ink-color: var(--disabled-text-color)
+  input-idle-line-color: var(--primary-background-color)
+  input-dropdown-icon-color: var(--secondary-text-color)
+  input-hover-line-color: var(--primary-color)
+  code-editor-background-color: var(--secondary-background-color)
+  mdc-select-ink-color: var(--primary-text-color)
+  mdc-select-label-ink-color: var(--secondary-text-color)
+  mdc-select-idle-line-color: var(--primary-text-color)
+  mdc-select-dropdown-icon-color: var(--secondary-text-color)
+  mdc-select-hover-line-color: var(--primary-color)
+
+
+
+
+##########################################
+
+
+
+Caule Animated Gray Glass:
+
+  # Change the value below 8px to 0px to remove the rounded corners
+  ha-card-border-radius: 8px
+  # Disable background for animated-background
+  lovelace-background: none
+  background: none
+  # Main colors
+  primary-color: "#acacac"
+  light-primary-color: "#e2e2e2"
+  graph-color: var(--primary-color)
+  primary-background-color: "#0c0c0c"
+  secondary-background-color: var(--primary-background-color)
+  divider-color: "#2c2c2c"
+  disabled-color: "#cbcbcb"
+  # Text colors
+  primary-text-color: "#e5e5e5"
+  secondary-text-color: var(--disabled-color)
+  text-primary-color: "#E5E5E5"
+  disabled-text-color: var(--disabled-color)
+  text-on-state-color: var(--ha-card-background)
+  text-shadow: '1px 1px 3px var(--primary-background-color), 0 0 6px var(--primary-text-color)'
+  # Sidebar colors
+  sidebar-icon-color: var(--primary-color)
+  sidebar-text-color: var(--primary-text-color)
+  sidebar-selected-background-color: var(--primary-background-color)
+  sidebar-selected-icon-color: var(--light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Icons colors
+  state-icon-color: var(--disabled-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--primary-background-color)
+  state-switch-active-color: var(--primary-color)
+  state-light-active-color: var(--primary-color)
+  # Settins and colors of Mini Media Player
+  mini-media-player-icon-color: var(--primary-color)
+  mini-media-player-accent-color: var(--primary-color)
+  mini-media-player-progress-height: 8px
+  # Papers slider colors
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--paper-slider-knob-color)
+  paper-slider-active-color: var(--paper-slider-knob-color)
+  paper-slider-container-color: var(--disabled-color)
+  # Labels colors
+  label-badge-background-color: var(--divider-color)
+  label-badge-text-color: var(--primary-text-color)
+  label-badge-red: var(--primary-color)
+  label-badge-blue: var(--light-primary-color)
+  # Cards colors
+  ha-card-background: "rgba(100, 100, 100, 0.15)"
   paper-card-background-color: var(--ha-card-background)
   paper-listbox-background-color: var(--primary-background-color)
   # Toggle button colors
