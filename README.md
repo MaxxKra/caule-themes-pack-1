@@ -167,7 +167,17 @@ input_select:
       - Caule Black Orange Glass
       - Caule Black Coral Glass
       - Caule Black Pink Glass
-      - Caule Black Gray Glass      
+      - Caule Black Gray Glass
+      - Caule Animated Rose Glass
+      - Caule Animated Purple Glass
+      - Caule Animated Blue Glass 
+      - Caule Animated Aqua Glass
+      - Caule Animated Green Glass
+      - Caule Animated Yellow Glass
+      - Caule Animated Orange Glass
+      - Caule Animated Coral Glass
+      - Caule Animated Pink Glass
+      - Caule Animated Gray Glass  
       - default
 ```
 Restart your Home Assistant so that the input_select is created.
